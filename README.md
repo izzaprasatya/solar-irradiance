@@ -1,2 +1,2 @@
 # globalirradiance
-This is the Python code for automating the yearly solar irradiance analysis using r.sun in GRASS GIS, which is time-consuming when done manually.
+This is the pyGRASS code for automating the yearly solar irradiance analysis using r.sun in GRASS GIS, which is time-consuming when done manually. Useful DEM-derived parameters such as slope and aspect were already computed with r.slope.aspect module. Linke turbidity coefficient are based on average linke turbidity values a tropical climate. While the albedo coefficient are based on area of interest land use type which is dense mixed forest & plantation (high canopy cover, moist).
