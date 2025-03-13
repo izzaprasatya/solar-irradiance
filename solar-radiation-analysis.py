@@ -21,6 +21,21 @@ months = {
     12: {"day": 357, "linke_value": 4.8},
 }
 
+# slope & aspect calculation
+gs.run_command('r.slope.aspect',
+    elevation='dem',
+    slope='slope',
+    aspect='aspect',
+    overwrite=True)
+
+# horizon calculation
+gs.run_command('r.horizon',
+    elevation='dem',
+    step='30',
+    bufferzone='200',
+    output='horangle',
+    maxdistance='500')
+
 # r.sun loop operation r.sun
 for month, params in months.items():
     gs.run_command('r.sun',
