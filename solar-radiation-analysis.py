@@ -1,5 +1,5 @@
 """
-Automation for calculating r.sun parameters monthly in a year
+Automation for calculating r.sun parameters for each day in a month (ex. January)
 Created by Izza P.A.
 """
 
